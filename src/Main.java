@@ -7,6 +7,6 @@ public class Main {
         double width = scanner.nextDouble();
         double s = L * width;
         System.out.println(s);
-        System.out.println("我是sb");
+        System.out.println("我是sb2");
     }
 }
