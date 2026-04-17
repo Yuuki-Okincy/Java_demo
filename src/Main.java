@@ -1,12 +1,18 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
-        double L = scanner.nextDouble();
-        double width = scanner.nextDouble();
-        double s = L * width;
-        System.out.println(s);
-        System.out.println("我是sb");
+        System.out.println("请输入年份");
+        int year = scanner.nextInt();
+
+        if ((year%4==0&&year%100!=0)||year%400==0){
+            System.out.println("该年是润年");
+        }else {
+            System.out.println("不是润年,是平年");
+        }
+
     }
 }
